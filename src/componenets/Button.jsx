@@ -5,6 +5,7 @@ export default function Button({ input, clickedValue, clickedFunction }) {
       className={` text-sm font-bold cursor-pointer ${clickedValue == input ? "text-white" : "text-black"} `}
       value={input}
       onClick={() => {
+
         clickedFunction(input)
       }}
     >{input}</button>
