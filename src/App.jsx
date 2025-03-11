@@ -4,6 +4,7 @@ import Button from "./componenets/Button"
 import { handleFileRead } from './config/handleFileRead'
 import Summary from './componenets/Summary'
 import Content from './componenets/Content'
+import Details from './componenets/Details'
 
 function App() {
   const [clicked, setClicked] = useState("Content")
@@ -51,7 +52,7 @@ function App() {
         <Summary tableContent={summary} />
       </div>}
       {clicked == "Details" && <div>
-        details
+        <Details textXml={fileContent} />
       </div>}
     </>
   )

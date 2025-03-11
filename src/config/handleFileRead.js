@@ -5,6 +5,7 @@ export function handleFileRead(file) {
     const reader = new FileReader()
     reader.onload = (event) => {
       const data = (event.target.result)
+      // console.log(data)
       resolve(data)
     }
     reader.onerror = () => {

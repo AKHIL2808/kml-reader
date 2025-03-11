@@ -1,6 +1,5 @@
 export default function Summary(tableContent) {
-  if (tableContent == null) return
-  console.log(tableContent)
+  if (tableContent.tableContent == null) return <div>Upload File</div>
   return <div className="grid rounded-md">
     <table className="table-auto m-4 rounded-md bg-white border border-gray-300">
       <thead className="">
